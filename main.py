@@ -1,6 +1,11 @@
+from animal import Animal
 
 if __name__ == "__main__":
-    # TODO: Create an instance of the Animal class
+
+    kitty = Animal("kitty", "Feline")
+
+    print (kitty)
+    kitty.speak()
     # TODO: Print the Animal instance
     # TODO: Call the method to make a generic animal sound
 
