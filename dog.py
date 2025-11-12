@@ -5,7 +5,6 @@ class Dog(Animal):
     """
     # TODO: Initialize the Dog class and add the breed attribute.
     # The constructor should accept name, species, and breed as parameters.
-
     def __init__(self, name, species, breed):
         super().__init__(name, species)
         self.breed = breed
@@ -13,9 +12,10 @@ class Dog(Animal):
     # TODO: Override the __str__ method to include the breed.
     # Example output:
     # Kingdom: 'kingdom attribute', Name: 'name attribute', Species: 'species attribute', Breed: 'breed attribute'
-    
-    # TODO: Add a method for the dog to make a specific sound. 
+    def __str__(self):
+        return super(). __str__() + f", Breed: '{self.breed}'"
+
     # Call the method `speak` and make it output a specific message like 
     # "The dog barks.
     def speak(self):
-        print("The dog barks")
+        print("The dog barks.")
